@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: robot-mall-service
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: robot_mall_service
+    url: ${DATABASE_URL:}
+    username: ${DATABASE_USERNAME:}
+    password: ${DATABASE_PASSWORD:}
+
+  jpa:
+    show-sql: true
+
+service:
+  port: 9001
+
+logging:
+  level:
+    org.hibername.type.descriptor.sql.BasicBinder: trace
+
+
